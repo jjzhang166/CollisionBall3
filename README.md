@@ -23,7 +23,8 @@ TCP版的服务器主要包含两种网络模型select选择模型和效率、�
 UDP版的服务器主要包含普通模型和IOCP完成端口模型。
 ### Net网络库使用示例
 
-TCPServer使用示例一：
+### TCPServer使用示例一：通过编写自定义回调函数
+
 ```
 void ServerProc(SOCKET sock, const char* buff, CTCPServer* pServer, LPVOID Param)  //客户端消息回调函数
 {
@@ -45,5 +46,33 @@ int main()
 	getchar();  //防止服务器退出
 	return 0;
 }
+
+```
+### TCPServer使用示例二：通过继承该类扩展为自己的服务器类
+```
+#include<TCPServer.h>
+
+class cGameServer :public Net::CTCPServer
+{
+public:
+	cGameServer();
+	virtual  ~cGameServer();
+
+	/*
+	*OnRecv(SOCKET sock, const char* buff)
+	*重写CTCPServer类中的收到客户端消息的回调函数
+	*@Param sock：消息来源sock
+	*@Param buff：消息内容
+	*/
+	virtual void OnRecv(SOCKET sock, const char* buff){ ..........}
+
+...................
+private:
+  ...............
+  .............
+
+};
+
+
 
 ```
