@@ -22,8 +22,9 @@
 TCP版的服务器主要包含两种网络模型select选择模型和效率、处理并发都较高(具体有多高看运行的PC性能如何)的IOCP完成端口模型
 UDP版的服务器主要包含普通模型和IOCP完成端口模型。
 ### Net网络库使用示例
-使用示例一：
 
+TCPServer使用示例一：
+```
 void ServerProc(SOCKET sock, const char* buff, CTCPServer* pServer, LPVOID Param)  //客户端消息回调函数
 {
     Do............(进行一些处理)
@@ -45,3 +46,4 @@ int main()
 	return 0;
 }
 
+```
