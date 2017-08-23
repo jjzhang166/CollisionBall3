@@ -77,8 +77,8 @@ private:
 
 int main()
 {
-cGameServer pServer;
-pServer->StartServer(NULL, NULL, 6036, Net::MODE_IOCP);
+SelfServer Server;
+Server.StartServer(NULL, NULL, 6036, Net::MODE_IOCP);
 getchar()//防止服务器直接退出
 return 0;
 }
