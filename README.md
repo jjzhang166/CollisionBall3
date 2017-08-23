@@ -17,3 +17,31 @@
 ![输入图片说明](https://git.oschina.net/uploads/images/2017/0823/220206_0377f762_1296205.jpeg "5.JPG")
 ![输入图片说明](https://git.oschina.net/uploads/images/2017/0823/220222_f6b05515_1296205.jpeg "6.JPG")
 
+### Net网络库介绍
+该网络库主要实现了TCP协议下的服务器和客户端，还有UDP协议下的服务器和客户端。
+TCP版的服务器主要包含两种网络模型select选择模型和效率、处理并发都较高(具体有多高看运行的PC性能如何)的IOCP完成端口模型
+UDP版的服务器主要包含普通模型和IOCP完成端口模型。
+### Net网络库使用示例
+使用示例一：
+
+void ServerProc(SOCKET sock, const char* buff, CTCPServer* pServer, LPVOID Param)  //客户端消息回调函数
+{
+    Do............(进行一些处理)
+}
+
+
+int main()
+{
+	CUDPServer server;
+	if (server.StartServer(ServerProc //客户端消息回调函数,NULL //回调函数预留参数,6036//服务器端口,UMODE_IOCP //服务器模型) == true)
+	{
+		cout << "开启服务器成功" << endl;
+	}
+	else
+	{
+		cout << server.GetLastError() << endl;
+	}
+	getchar();  //防止服务器退出
+	return 0;
+}
+
