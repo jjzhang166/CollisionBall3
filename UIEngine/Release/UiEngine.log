@@ -1,0 +1,9 @@
+﻿  cButton.cpp
+f:\visual-studio-liushiyin\仙人杀\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  cGameEngine.cpp
+f:\visual-studio-liushiyin\仙人杀\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+cGameEngine.cpp(547): warning C4554: “|”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+  cMyTimer.cpp
+  cSight.cpp
+f:\visual-studio-liushiyin\仙人杀\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  UiEngine.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Release\UiEngine.lib

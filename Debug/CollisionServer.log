@@ -1,0 +1,8 @@
+﻿  cGameServer.cpp
+f:\visual-studio-liushiyin\仙人杀\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\visual-studio-liushiyin\仙人杀\netlib\tcpserver.h(26): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ServerST”的左侧
+  正在生成代码...
+  正在跳过...(未检测到相关更改)
+  CollisionServer.cpp
+  CollisionServer.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\CollisionServer.exe
+  CollisionServer.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\CollisionServer.pdb (Partial PDB)

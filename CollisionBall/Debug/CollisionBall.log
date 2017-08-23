@@ -1,0 +1,26 @@
+﻿  cGameSight.cpp
+f:\visual-studio-liushiyin\仙人杀\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\visual-studio-liushiyin\仙人杀\netlib\tcpclient.h(16): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ClientSt”的左侧
+f:\visual-studio-liushiyin\仙人杀\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(94): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(95): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(120): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(121): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(196): warning C4244: “=”: 从“float”转换到“LONG”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(197): warning C4244: “=”: 从“float”转换到“LONG”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(209): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(210): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(291): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(292): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(325): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(326): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(357): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(358): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(400): warning C4018: “<”: 有符号/无符号不匹配
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(482): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(483): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(497): warning C4018: “<”: 有符号/无符号不匹配
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(528): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(529): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  CollisionBall.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\CollisionBall.exe
+  CollisionBall.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\CollisionBall.pdb (Partial PDB)

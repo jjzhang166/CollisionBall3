@@ -1,0 +1,48 @@
+﻿  TCPClient.cpp
+f:\visual-studio-liushiyin\仙人杀\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\visual-studio-liushiyin\仙人杀\netlib\TCPClient.h(16): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ClientSt”的左侧
+TCPClient.cpp(47): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+TCPClient.cpp(46): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1830): note: 参见“inet_addr”的声明
+  TCPServer.cpp
+f:\visual-studio-liushiyin\仙人杀\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\visual-studio-liushiyin\仙人杀\netlib\TCPServer.h(26): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ServerST”的左侧
+TCPServer.cpp(40): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+TCPServer.cpp(103): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(2218): note: 参见“gethostbyname”的声明
+TCPServer.cpp(112): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+TCPServer.cpp(194): warning C4018: “<”: 有符号/无符号不匹配
+TCPServer.cpp(221): warning C4018: “<”: 有符号/无符号不匹配
+  UDPClient.cpp
+f:\visual-studio-liushiyin\仙人杀\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\visual-studio-liushiyin\仙人杀\netlib\UDPClient.h(15): warning C4091: “typedef ”: 没有声明变量时忽略“Net::UClientSt”的左侧
+UDPClient.cpp(50): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+UDPClient.cpp(49): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1830): note: 参见“inet_addr”的声明
+  UDPServer.cpp
+f:\visual-studio-liushiyin\仙人杀\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+UDPServer.cpp(56): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(2218): note: 参见“gethostbyname”的声明
+UDPServer.cpp(65): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+UDPServer.cpp(74): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+UDPServer.cpp(89): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+UDPServer.cpp(135): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+UDPServer.cpp(158): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+UDPServer.cpp(177): warning C4018: “<”: 有符号/无符号不匹配
+UDPServer.cpp(210): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+UDPServer.cpp(215): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+UDPServer.cpp(245): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+UDPServer.cpp(252): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+UDPServer.cpp(276): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+UDPServer.cpp(288): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um\WinSock2.h(1848): note: 参见“inet_ntoa”的声明
+  NetLib.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Release\NetLib.lib

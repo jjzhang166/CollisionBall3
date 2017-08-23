@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cAmination.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cBaseUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cCircle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cGameEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cLine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cMyTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cPicture.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cPolygon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cRectangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cText.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cTriangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cResourcePool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Lock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cSight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cAmination.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cBaseUI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cCircle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cGameEngine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cLine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cMyTimer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cPicture.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cPolygon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cRectangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cText.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cTriangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cResourcePool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Lock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cSight.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
