@@ -52,11 +52,11 @@ int main()
 ```
 #include<TCPServer.h>
 
-class cGameServer :public Net::CTCPServer
+class SelfServer :public Net::CTCPServer
 {
 public:
-	cGameServer();
-	virtual  ~cGameServer();
+	SelfServer();
+	virtual  ~SelfServer();
 
 	/*
 	*OnRecv(SOCKET sock, const char* buff)
@@ -73,6 +73,14 @@ private:
 
 };
 
+#include"SelfServer.h"
 
+int main()
+{
+cGameServer pServer;
+pServer->StartServer(NULL, NULL, 6036, Net::MODE_IOCP);
+getchar()//防止服务器直接退出
+return 0;
+}
 
 ```
