@@ -1,9 +1,24 @@
-﻿  cButton.cpp
-f:\visual-studio-liushiyin\仙人杀\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+﻿  stdafx.cpp
+  cAmination.cpp
+  cBaseUI.cpp
+  cButton.cpp
+f:\collisionball\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  cCircle.cpp
+cCircle.cpp(138): warning C4838: 从“UINT”转换到“LONG”需要收缩转换
   cGameEngine.cpp
-f:\visual-studio-liushiyin\仙人杀\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
-cGameEngine.cpp(547): warning C4554: “|”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+f:\collisionball\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  cLine.cpp
   cMyTimer.cpp
+  cPicture.cpp
+  cPolygon.cpp
+  cRectangle.cpp
+  cResourcePool.cpp
   cSight.cpp
-f:\visual-studio-liushiyin\仙人杀\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
-  UiEngine.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Release\UiEngine.lib
+f:\collisionball\uiengine\cGameEngine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  cText.cpp
+  cTriangle.cpp
+  Lock.cpp
+  Tool.cpp
+Tool.cpp(27): warning C4018: “<”: 有符号/无符号不匹配
+Tool.cpp(51): warning C4244: “初始化”: 从“double”转换到“UINT”，可能丢失数据
+  UiEngine.vcxproj -> F:\CollisionBall\Release\UiEngine.lib

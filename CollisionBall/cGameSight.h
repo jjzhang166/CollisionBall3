@@ -116,9 +116,9 @@ public:
 
 	void CheckAttractByBackHole();
 
-	//void initLeaderList();
+	void initLeaderList();
 
-	//void UpdateLeadList();  //更新排行榜
+	void UpdateLeadList();  //更新排行榜
 private:
 	MyEngine::cPicture* m_Map[MAP_ROW][MAP_RANK]; 
 	MyEngine::cButton* m_goBack;
@@ -132,6 +132,6 @@ private:
 	std::list<cBackHole*> m_backholeList;
 	POINT m_miniMapOrigin;  //小地图原点
 	bool m_KeyIsDown[2] = { false,false };
-	//MyEngine::cText* m_leaderboard;  //显示排行榜
-	//vector<MyEngine::cText*> m_leaderList;  //排行榜列表
+	MyEngine::cText* m_leaderboard;  //显示排行榜
+	vector<MyEngine::cText*> m_leaderList;  //排行榜列表
 };

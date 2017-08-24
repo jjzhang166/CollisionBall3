@@ -1,3 +1,7 @@
-﻿  cText.cpp
-f:\visual-studio-liushiyin\仙人杀\uiengine\ctext.cpp(100): warning C4172: 返回局部变量或临时变量的地址
-  UiEngine.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\UiEngine.lib
+﻿  cGameEngine.cpp
+f:\collisionball\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  正在生成代码...
+  正在跳过...(未检测到相关更改)
+  cSight.cpp
+  cButton.cpp
+  UiEngine.vcxproj -> F:\CollisionBall\Debug\UiEngine.lib

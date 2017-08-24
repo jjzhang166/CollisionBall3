@@ -24,7 +24,12 @@ void cGameSight::OnRecv(char * buff)
 	switch (pMsg->Type)
 	{
 	case Msg_AllotTag:
+	{
 		m_player->m_tag = pMsg->id;
+		char name[MAX_PATH] = { 0 };
+		sprintf(name, "玩家%d", pMsg->id);
+		m_player->SetName(name);
+	}
 		break;
 	case Msg_PlayMove:
 		OtherPlayMoveMsg(*pMsg);
@@ -72,10 +77,10 @@ int cGameSight::OnTimer(int id, int iParam, string str)
 	CheckDeleteOtherPlayers();
 	CalcBackHoleScreenPos();
 	CheckAttractByBackHole();
+	UpdateLeadList();
 	if (updatedelay == 0)
 	{
 		SendUpdateInfoMsg();
-		//UpdateLeadList();
 	}
 	updatedelay == 0 ? updatedelay = 5 : --updatedelay;
 	return 1;
@@ -216,17 +221,17 @@ void cGameSight::initSight()
 	m_miniMap->SetnBount(6);
 	m_miniMap->SetFirstBountColor(RGB(181, 230, 29));
 	CalcMiniPlayerSite();
-	//m_leaderboard = new cText;
-	//m_leaderboard->SetText(L"排行榜:");
-	//m_leaderboard->SetTextColor(RGB(255, 127, 39));
-	//m_leaderboard->SetX(SCREENSIZE.width - m_miniMap->GetWidth() - 2);
-	//m_leaderboard->SetY(m_miniMap->GetHeight() + 10);
+	m_leaderboard = new cText;
+	m_leaderboard->SetText("排行榜:");
+	m_leaderboard->SetTextColor(RGB(255, 127, 39));
+	m_leaderboard->SetX(SCREENSIZE.width - m_miniMap->GetWidth() - 2);
+	m_leaderboard->SetY(m_miniMap->GetHeight() + 10);
 	addChild(m_goBack);
 	addChild(m_player);
 	addChild(m_miniMap);
 	addChild(m_miniPlayer);
-	//addChild(m_leaderboard);
-	/*initLeaderList();*/
+	addChild(m_leaderboard);
+	initLeaderList();
 	cGameEngine::GetEngine()->AddEventToUi(m_goBack, WM_LBUTTONUP, _CALLFUNC(cGameSight::OnGoBack), this);
 	cGameEngine::GetEngine()->AddEventToUi(this, WM_KEYUP, _CALLFUNC(cGameSight::OnKeyUp), this);
 	cGameEngine::GetEngine()->AddEventToUi(this, WM_KEYDOWN, _CALLFUNC(cGameSight::OnKeyDown), this);
@@ -279,6 +284,9 @@ void cGameSight::AddPlayer(NetMsg msg)
 	pPlayer->SetWorldX(msg.pt.x);
 	pPlayer->SetWorldY(msg.pt.y);
 	pPlayer->m_tag = msg.id1;
+	char name[MAX_PATH] = { 0 };
+	sprintf(name, "玩家%d", pPlayer->m_tag);
+	pPlayer->SetName(name);
 	pPlayer->SetVx(msg.v[0]);
 	pPlayer->SetVy(msg.v[1]);
 	pPlayer->SetRadius(msg.v[2]);
@@ -313,6 +321,10 @@ void cGameSight::OtherPlayMoveMsg(NetMsg msg)
 
 void cGameSight::MoveOtherPlayers()
 {
+	if (m_player == nullptr)
+	{
+		return;
+	}
 	auto it1 = m_otherPlayers.begin();
 	auto it2 = m_otherminiPlayers.begin();
 	for (; it1 != m_otherPlayers.end(); ++it1, ++it2)
@@ -329,6 +341,10 @@ void cGameSight::MoveOtherPlayers()
 
 void cGameSight::CalcFoodScreenPos()
 {
+	if (m_player == nullptr)
+	{
+		return;
+	}
 	for (auto it : m_foodList)
 	{
 		it->SetX(it->m_worldPos.x - m_player->GetWorldX() + m_player->GetX());
@@ -644,38 +660,51 @@ void cGameSight::CheckAttractByBackHole()
 	}
 }
 
-//void cGameSight::initLeaderList()
-//{
-//	int basicx = SCREENSIZE.width - m_miniMap->GetWidth() + 40;
-//	int basicy = m_miniMap->GetHeight() + 65;
-//	for (int i = 0; i < 6; ++i)
-//	{
-//		cText* text = new cText(L"");
-//		text->SetFontHeight(20);
-//		text->SetFontWidth(10);
-//		text->SetTextColor(RGB(255, 0, 0));
-//		text->SetX(basicx);
-//		text->SetY(basicy + i * 22);
-//		m_leaderList.push_back(text);
-//		addChild(text);
-//	}
-//}
+void cGameSight::initLeaderList()
+{
+	int basicx = SCREENSIZE.width - m_miniMap->GetWidth() + 40;
+	int basicy = m_miniMap->GetHeight() + 65;
+	for (int i = 0; i < 6; ++i)
+	{
+		cText* text = new cText("");
+		text->SetFontHeight(20);
+		text->SetFontWidth(10);
+		text->SetTextColor(RGB(255, 0, 0));
+		text->SetX(basicx);
+		text->SetY(basicy + i * 22);
+		m_leaderList.push_back(text);
+		addChild(text);
+	}
+}
 
-//void cGameSight::UpdateLeadList()
-//{
-//	int nums = 0;
-//	for (auto it : m_otherPlayers)
-//	{
-//		WCHAR name[20] = { 0 };
-//		wprintf(name, L"玩家%d", it->m_tag);
-//		m_leaderList[nums]->SetText(name);
-//		++nums;
-//		if (nums == 5)
-//		{
-//			break;
-//		}
-//	}
-//	WCHAR name[20] = { 0 };
-//	wprintf(name, L"玩家%d", m_player->m_tag);
-//	m_leaderList[5]->SetText(name);
-//}
+void cGameSight::UpdateLeadList()
+{
+	if (m_player == nullptr)
+	{
+		return;
+	}
+	char name[MAX_PATH] = { 0 };
+	int num[11] = { 0 };
+	num[5] = 1 << 30;
+	for (auto it : m_otherPlayers)
+	{
+		for (int i = 0; i <=5; ++i)
+		{
+			if (it->GetBody()->GetRadius()<=num[i])
+			{
+				num[i - 1] = it->GetBody()->GetRadius();
+				num[i + 5] = it->m_tag;
+				break;
+			}
+		}
+	}
+	for (int i = 4; i>=0; --i)
+	{
+		if (num[i] == 0)
+			break;
+		sprintf(name, "玩家%d:%d", num[i + 6], num[i]);
+		m_leaderList[4 - i]->SetText(name);
+	}
+	sprintf(name, "自己:%d", m_player->GetBody()->GetRadius());
+	m_leaderList[5]->SetText(name);
+}

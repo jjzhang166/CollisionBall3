@@ -1,10 +1,51 @@
-﻿  TCPServer.cpp
-f:\visual-studio-liushiyin\仙人杀\netlib\tcpserver.h(26): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ServerST”的左侧
-f:\visual-studio-liushiyin\仙人杀\netlib\tcpserver.cpp(43): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\netlib\tcpserver.cpp(105): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+﻿  stdafx.cpp
+  UDPServer.cpp
+f:\collisionball\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\collisionball\netlib\udpserver.cpp(56): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(2218): note: 参见“gethostbyname”的声明
-f:\visual-studio-liushiyin\仙人杀\netlib\tcpserver.cpp(112): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+f:\collisionball\netlib\udpserver.cpp(65): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
-f:\visual-studio-liushiyin\仙人杀\netlib\tcpserver.cpp(163): warning C4018: “<”: 有符号/无符号不匹配
-f:\visual-studio-liushiyin\仙人杀\netlib\tcpserver.cpp(186): warning C4018: “<”: 有符号/无符号不匹配
-  NetLib.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\NetLib.lib
+f:\collisionball\netlib\udpserver.cpp(74): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\collisionball\netlib\udpserver.cpp(89): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\collisionball\netlib\udpserver.cpp(135): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+f:\collisionball\netlib\udpserver.cpp(158): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+f:\collisionball\netlib\udpserver.cpp(177): warning C4018: “<”: 有符号/无符号不匹配
+f:\collisionball\netlib\udpserver.cpp(210): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\collisionball\netlib\udpserver.cpp(223): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\collisionball\netlib\udpserver.cpp(268): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\collisionball\netlib\udpserver.cpp(275): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\collisionball\netlib\udpserver.cpp(299): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\collisionball\netlib\udpserver.cpp(311): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+  UDPClient.cpp
+f:\collisionball\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\collisionball\netlib\udpclient.h(15): warning C4091: “typedef ”: 没有声明变量时忽略“Net::UClientSt”的左侧
+f:\collisionball\netlib\udpclient.cpp(50): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+f:\collisionball\netlib\udpclient.cpp(49): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1830): note: 参见“inet_addr”的声明
+  TCPServer.cpp
+f:\collisionball\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\collisionball\netlib\tcpserver.h(26): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ServerST”的左侧
+f:\collisionball\netlib\tcpserver.cpp(40): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+f:\collisionball\netlib\tcpserver.cpp(103): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(2218): note: 参见“gethostbyname”的声明
+f:\collisionball\netlib\tcpserver.cpp(112): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\collisionball\netlib\tcpserver.cpp(202): warning C4018: “<”: 有符号/无符号不匹配
+f:\collisionball\netlib\tcpserver.cpp(229): warning C4018: “<”: 有符号/无符号不匹配
+  TCPClient.cpp
+f:\collisionball\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\collisionball\netlib\tcpclient.h(16): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ClientSt”的左侧
+f:\collisionball\netlib\tcpclient.cpp(46): warning C4244: “参数”: 从“unsigned long”转换到“u_short”，可能丢失数据
+f:\collisionball\netlib\tcpclient.cpp(45): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\um\winsock2.h(1830): note: 参见“inet_addr”的声明
+  Lock.cpp
+  正在生成代码...
+  NetLib.vcxproj -> F:\CollisionBall\Debug\NetLib.lib

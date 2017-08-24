@@ -1,1 +1,17 @@
-﻿  CollisionBall.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Release\CollisionBall.exe
+﻿  正在生成代码
+  115 of 1662 functions ( 6.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    45 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+UiEngine.lib(cMyTimer.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(cGameEngine.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(cPicture.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(cButton.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(Tool.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(cResourcePool.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(stdafx.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(Lock.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(cLine.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(cTriangle.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+UiEngine.lib(cPolygon.obj) : warning LNK4020: “F:\CollisionBall\UIEngine\Release\UiEngine.pdb”中的类型记录已损坏；某些符号和类型可能无法从调试器中访问
+  CollisionBall.vcxproj -> F:\CollisionBall\Release\CollisionBall.exe

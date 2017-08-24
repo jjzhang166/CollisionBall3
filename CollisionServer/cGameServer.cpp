@@ -27,7 +27,6 @@ void cGameServer::OnRecv(SOCKET sock, const char * buff)
 			m_backHoleList.clear();
 			m_foodList.clear();
 			DeleteTimer(1);
-			DeleteTimer(2);
 		}
 		return;
 	}

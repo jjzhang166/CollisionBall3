@@ -1,2 +1,27 @@
-﻿  cRectangle.cpp
-  UiEngine.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\UiEngine.lib
+﻿  stdafx.cpp
+  Tool.cpp
+f:\collisionball\uiengine\tool.cpp(27): warning C4018: “<”: 有符号/无符号不匹配
+f:\collisionball\uiengine\tool.cpp(51): warning C4244: “初始化”: 从“double”转换到“UINT”，可能丢失数据
+  Lock.cpp
+  cTriangle.cpp
+  cText.cpp
+  cSight.cpp
+f:\collisionball\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  cResourcePool.cpp
+  cRectangle.cpp
+  cPolygon.cpp
+  cPicture.cpp
+  cMyTimer.cpp
+  cLine.cpp
+  cGameEngine.cpp
+f:\collisionball\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  cCircle.cpp
+f:\collisionball\uiengine\ccircle.cpp(138): warning C4838: 从“UINT”转换到“LONG”需要收缩转换
+  cButton.cpp
+f:\collisionball\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+  cBaseUI.cpp
+  cAmination.cpp
+  正在生成代码...
+f:\collisionball\uiengine\camination.cpp(302): warning C4172: 返回局部变量或临时变量的地址
+f:\collisionball\uiengine\ctext.cpp(96): warning C4172: 返回局部变量或临时变量的地址
+  UiEngine.vcxproj -> F:\CollisionBall\Debug\UiEngine.lib

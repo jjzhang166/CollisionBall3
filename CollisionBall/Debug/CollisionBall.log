@@ -1,26 +1,74 @@
-﻿  cGameSight.cpp
-f:\visual-studio-liushiyin\仙人杀\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
-f:\visual-studio-liushiyin\仙人杀\netlib\tcpclient.h(16): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ClientSt”的左侧
-f:\visual-studio-liushiyin\仙人杀\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(94): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(95): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(120): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(121): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(196): warning C4244: “=”: 从“float”转换到“LONG”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(197): warning C4244: “=”: 从“float”转换到“LONG”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(209): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(210): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(291): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(292): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(325): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(326): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(357): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(358): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(400): warning C4018: “<”: 有符号/无符号不匹配
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(482): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(483): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(497): warning C4018: “<”: 有符号/无符号不匹配
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(528): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-f:\visual-studio-liushiyin\仙人杀\collisionball\cgamesight.cpp(529): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-  CollisionBall.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\CollisionBall.exe
-  CollisionBall.vcxproj -> F:\Visual-Studio-liushiyin\仙人杀\Debug\CollisionBall.pdb (Partial PDB)
+﻿  stdafx.cpp
+  cStartSight.cpp
+f:\collisionball\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+f:\collisionball\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\collisionball\netlib\tcpclient.h(16): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ClientSt”的左侧
+f:\collisionball\collisionball\cstartsight.cpp(17): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cstartsight.cpp(18): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cstartsight.cpp(23): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cstartsight.cpp(24): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cstartsight.cpp(26): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cstartsight.cpp(27): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cstartsight.cpp(92): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+f:\collisionball\collisionball\cstartsight.cpp(95): warning C4018: “<”: 有符号/无符号不匹配
+f:\collisionball\collisionball\cstartsight.cpp(103): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+f:\collisionball\collisionball\cstartsight.cpp(105): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+f:\collisionball\collisionball\cstartsight.cpp(107): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+f:\collisionball\collisionball\cstartsight.cpp(109): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+  TheAgency.cpp
+f:\collisionball\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+f:\collisionball\collisionball\theagency.cpp(37): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\theagency.cpp(49): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\theagency.cpp(55): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  CollisionBall.cpp
+  cGameSight.cpp
+f:\collisionball\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+f:\collisionball\netlib\tcpclient.h(16): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ClientSt”的左侧
+f:\collisionball\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+f:\collisionball\collisionball\cgamesight.cpp(30): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+f:\collisionball\collisionball\cgamesight.cpp(99): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(100): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(125): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(126): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(201): warning C4244: “=”: 从“float”转换到“LONG”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(202): warning C4244: “=”: 从“float”转换到“LONG”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(214): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(215): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(299): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(300): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(288): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+f:\collisionball\collisionball\cgamesight.cpp(337): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(338): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(373): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(374): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(416): warning C4018: “<”: 有符号/无符号不匹配
+f:\collisionball\collisionball\cgamesight.cpp(498): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(499): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(513): warning C4018: “<”: 有符号/无符号不匹配
+f:\collisionball\collisionball\cgamesight.cpp(544): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(545): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\cgamesight.cpp(693): warning C4018: “<=”: 有符号/无符号不匹配
+f:\collisionball\collisionball\cgamesight.cpp(705): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+f:\collisionball\collisionball\cgamesight.cpp(708): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+  cGamePlayer.cpp
+f:\collisionball\uiengine\cgameengine.h(25): warning C4091: “typedef ”: 没有声明变量时忽略“MyEngine::SIZE”的左侧
+f:\collisionball\collisionball\cgameplayer.cpp(29): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(123): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(127): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(135): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(139): warning C4244: “参数”: 从“double”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(152): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(154): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(205): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(228): warning C4244: “参数”: 从“float”转换到“const int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(243): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\collisionball\collisionball\cgameplayer.cpp(245): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  cFood.cpp
+  cBackHole.cpp
+  正在生成代码...
+  CollisionBall.vcxproj -> F:\CollisionBall\Debug\CollisionBall.exe
+  CollisionBall.vcxproj -> F:\CollisionBall\Debug\CollisionBall.pdb (Partial PDB)

@@ -10,7 +10,7 @@ using namespace MyEngine;
 cStartSight::cStartSight()
 {
 	MyEngine::SIZE size = cGameEngine::GetEngine()->GetClientSize();
-	m_Title = new cText(L"Åö×²Çò");
+	m_Title = new cText("Åö×²Çò");
 	m_Title->SetTextColor(RGB(0,255,0));
 	m_Title->SetFontWidth(35);
 	m_Title->SetFontHeight(70);

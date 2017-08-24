@@ -1,5 +1,6 @@
 #pragma once
 #include"cBaseUI.h"
+#include<string>
 
 namespace MyEngine
 {
@@ -16,36 +17,36 @@ namespace MyEngine
 		/*
 		带参构造函数
 		@Param 
-			LPWSTR text：文本内容
+			string text：文本内容
 		*/
-		explicit cText(const LPWSTR& text);
+		explicit cText(const std::string& text);
 
 		virtual ~cText();
 
 		/*
-		SetText(LPWSTR text)
+		SetText(string text)
 		设置文本控件内容
 		@Param 
 			LPWSTR text:新的文本内容
 		*/
-		void SetText(const LPWSTR& text);
+		void SetText(const std::string& text);
 
 		/*
 		GetText()
 		获取文本控件内容
-		const LPWSTR&：
+		const string&：
 			当前文本内容
 		*/
-		const LPWSTR& GetText() const;
+		const std::string& GetText() const;
 
 		/*
-		Append(LPWSTR text)
+		Append(string text)
 		向当前文本内容末尾添加内容
 		@return bool:
 			true:添加成功
 			false：添加失败
 		*/
-		bool Append(const LPWSTR& text);
+		bool Append(const std::string& text);
 
 		/*
 		SetTextColor(const UINT& rgb)
@@ -258,7 +259,7 @@ namespace MyEngine
 		*/
 		virtual bool Draw(HDC hDc) override;
 	private:
-		LPWSTR m_Text;
+		std::string m_Text;
 
 		UINT m_textColor;
 

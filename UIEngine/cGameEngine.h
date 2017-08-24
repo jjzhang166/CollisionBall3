@@ -91,13 +91,13 @@ namespace MyEngine
 		CreateText(const LPWSTR& text,const int& x,const int& y)
 		创建一个Text文本
 		@Param
-			LPWSTR text:文本内容
+			string text:文本内容
 			int x:文本x坐标
 			int y:文本y坐标
 		@return cText：
 			成功则返回创建的文本指针，失败则返回nullptr
 		*/
-		cText* CreateText(const LPWSTR& text, const int& x , const int& y );
+		cText* CreateText(const std::string& text, const int& x , const int& y );
 
 		/*
 		CreateLine(const POINT& start,const POINT& end)

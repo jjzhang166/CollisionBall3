@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  cGameServer.cpp
+f:\collisionball\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+F:\CollisionBall\NetLib\TCPServer.h(26): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ServerST”的左侧
+  cMyTimer.cpp
+  CollisionServer.cpp
+f:\collisionball\netlib\public.h(23): warning C4091: “typedef ”: 没有声明变量时忽略“OVP_IO_UDATA”的左侧
+F:\CollisionBall\NetLib\TCPServer.h(26): warning C4091: “typedef ”: 没有声明变量时忽略“Net::ServerST”的左侧
+  正在生成代码
+  All 830 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  CollisionServer.vcxproj -> F:\CollisionBall\Release\CollisionServer.exe

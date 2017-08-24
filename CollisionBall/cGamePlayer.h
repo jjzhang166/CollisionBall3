@@ -4,6 +4,7 @@
 #include<cText.h>
 #include<cRectangle.h>
 #include<string>
+#include<sstream>
 #define Basic_Speed 5
 #define OneExp 10
 #define OneFExp 0.3f
@@ -101,6 +102,8 @@ public:
 	void SetbDel(bool b);
 
 	bool GetbDel();
+
+	void SetName(std::string name);
 private:
 	int m_vx;  //x轴方向上的速度
 	int m_vy;   //y轴方向上的速度
@@ -113,6 +116,7 @@ private:
 	MyEngine::cCircle* m_body;
 	MyEngine::cRectangle* m_physicalBar;
 	bool m_bDel;
+	MyEngine::cText* m_name;
 public:
 	int m_tag = 0;    //标签
 };

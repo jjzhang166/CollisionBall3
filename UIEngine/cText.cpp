@@ -1,8 +1,9 @@
 #include "stdafx.h"
 #include "cText.h"
+using namespace std;
 using namespace MyEngine;
 
-cText::cText():m_Text(L"")
+cText::cText():m_Text("")
 {
 	m_type = UI_Text;
 	m_bgColor = RGB(255, 255, 255);
@@ -23,7 +24,7 @@ cText::cText():m_Text(L"")
 }
 
 
-MyEngine::cText::cText(const LPWSTR & text)
+MyEngine::cText::cText(const string & text)
 {
 	m_type = UI_Text;
 	m_Text = text;
@@ -49,24 +50,19 @@ cText::~cText()
 	m_hFont ? DeleteObject(m_hFont) : 1;
 }
 
-void MyEngine::cText::SetText(const LPWSTR & text)
+void MyEngine::cText::SetText(const string& text)
 {
 	m_Text = text;
 }
 
-const LPWSTR & MyEngine::cText::GetText() const
+const string & MyEngine::cText::GetText() const
 {
 	return m_Text;
 }
 
-bool MyEngine::cText::Append(const LPWSTR & text)
+bool MyEngine::cText::Append(const string& text)
 {
-	LPWSTR temp = m_Text;
-	lstrcatW(m_Text, text);
-	if (lstrcmpW(m_Text, temp) == 0)
-	{
-		return true;
-	}
+	m_Text.append(text);
 	return false;
 }
 
@@ -248,7 +244,7 @@ const RECT MyEngine::cText::GetRect() const
 {
 	RECT rect;
 	rect.left = GetX();
-	rect.right = GetX() + m_fontWidth*lstrlenW(m_Text);
+	rect.right = GetX() + m_fontWidth*m_Text.length();
 	rect.top = GetY();
 	rect.bottom = GetY() + m_fontHeight;
 	return  rect;
@@ -267,7 +263,7 @@ bool MyEngine::cText::Draw(HDC hDc)
 	}
 	::SetTextColor(hDc,m_textColor);
 	SelectObject(hDc, m_hFont);
-	TextOut(hDc, GetX(), GetY(), m_Text, lstrlenW(m_Text));
+	TextOutA(hDc, GetX(), GetY(), m_Text.c_str(), m_Text.length());
 
 	return true;
 }

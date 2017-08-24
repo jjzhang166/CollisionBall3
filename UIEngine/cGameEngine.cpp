@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "cGameEngine.h"
 #include"Tool.h"
-
+using namespace std;
 using namespace MyEngine;
 #define TimerId 1
 #define TimerDelay 18
@@ -269,7 +269,7 @@ const LPWSTR & cGameEngine::GetLastError() const
 	return m_wError;
 }
 
-cText * MyEngine::cGameEngine::CreateText(const LPWSTR & text, const int & x, const int & y)
+cText * MyEngine::cGameEngine::CreateText(const string & text, const int & x, const int & y)
 {
 	cText* pText = new cText(text);
 	pText->m_Uid = m_Uid++;

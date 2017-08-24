@@ -72,19 +72,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>F:\Visual-Studio-liushiyin\仙人杀\NetLib;F:\Visual-Studio-liushiyin\仙人杀\UIEngine;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\Visual-Studio-liushiyin\仙人杀\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\CollisionBall\NetLib;F:\CollisionBall\UIEngine;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\CollisionBall\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <ReferencePath>F:\CollisionBall\UIEngine;$(ReferencePath)</ReferencePath>
+    <LibraryPath>F:\CollisionBall\CollisionBall\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>F:\Visual-Studio-liushiyin\仙人杀\NetLib;F:\Visual-Studio-liushiyin\仙人杀\UIEngine;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\Visual-Studio-liushiyin\仙人杀\Release;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\CollisionBall\NetLib;F:\CollisionBall\UIEngine;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\CollisionBall\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>F:\CollisionBall\UIEngine;F:\CollisionBall\NetLib;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\CollisionBall\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

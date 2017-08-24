@@ -10,6 +10,15 @@ cGamePlayer::cGamePlayer()
 	random_device rad;
 	m_body = new cCircle;
 	m_physicalBar = new cRectangle;
+	stringstream ss;
+	/*ss >> "Íæ¼Ò";*/
+	ss >> m_tag;
+	string name;
+	ss >> name;
+	m_name = new cText(name);
+	m_name->SetFontHeight(20);
+	m_name->SetFontWidth(10);
+	m_name->SetTextColor(RGB(255, 0, 0));
 	m_bDel = false;
 	m_basicSpeed = Basic_Speed;
 	m_physicalValue = 100;
@@ -30,6 +39,7 @@ cGamePlayer::cGamePlayer()
 	CalcScreenSite();
 	addChild(m_body);
 	addChild(m_physicalBar);
+	addChild(m_name);
 }
 
 cGamePlayer::~cGamePlayer()
@@ -39,6 +49,7 @@ cGamePlayer::~cGamePlayer()
 void cGamePlayer::SetX(const int & x)
 {
 	m_body->SetX(x);
+	m_name->SetX(x - 30);
 	m_physicalBar->SetX(x);
 }
 
@@ -50,6 +61,7 @@ const int & cGamePlayer::GetX() const
 void cGamePlayer::SetY(const int & y)
 {
 	m_body->SetY(y);
+	m_name->SetY(y - 5);
 	m_physicalBar->SetY(y - m_body->GetRadius());
 }
 
@@ -268,5 +280,10 @@ void cGamePlayer::SetbDel(bool b)
 bool cGamePlayer::GetbDel()
 {
 	return m_bDel;
+}
+
+void cGamePlayer::SetName(string name)
+{
+	m_name->SetText(name);
 }
 
