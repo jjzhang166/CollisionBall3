@@ -87,9 +87,9 @@ public:
     /*
      * m_maxClient
      * 最大客户短连接数的getter和setter方法
-     * 作者select模型下设置的最大上限为256,默认为100
-     * POLL模型下设置的最大上限为10000,默认为5000
-     * EPOLL模型下没有最大上限,默认为10000
+     * 作者select模型下设置的最大上限为512,默认为100
+     * POLL模型下设置的最大上限为2048,默认为512
+     * EPOLL模型下没有最大上限,默认为1024
      */
     void SetMaxConn(const int& nums);
     const int& GetMaxConn();

@@ -61,14 +61,14 @@ int TCPServer::StartServer()
         m_maxClients=100;
         break;
     case POLL_MODE:
-        m_maxClients=5000;
+        m_maxClients=512;
         if(InitPollMode())
         {
              return -1;
         }
         break;
     case EPOLL_MODE:
-        m_maxClients=5000;
+        m_maxClients=1024;
         if(InitEpollMode())
         {
             return -1;

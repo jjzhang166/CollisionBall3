@@ -15,8 +15,8 @@ using namespace std;
 #define DEFAULT_PORT 6036
 #define MAX_LISTEN 100
 #define MAX_BUFF 1024
-#define MAX_SELECTNUM 256
-#define MAX_POLLNUM 10000
+#define MAX_SELECTNUM 512
+#define MAX_POLLNUM 2048
 
 #define DISCONN_FLAG 10001
 #define NORMAL_FLAG 1002
