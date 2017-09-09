@@ -97,14 +97,13 @@ return 0;
 ### 2017/9/9 22：25新增Linux下的网络库UNet
 该网络库也和windows下的一样包含TCP和UDP协议下的客户端和服务端该网络模型TCP服务端包含select模型(相比于Windos下的select模型并发数要大，最优处理数在几百，最大可达2048，这里我限制它的最大为512),poll模型（select的改良版，提升并发数，效率没有很大提升）,epoll模型（既提升了了并发数又提升了效率），用户可根据自身需要选择自己所需的模型。
 
-
-
-#简要介绍一下如何使用该网络库
-首先进入UNet文件夹,使用makefile文件编译出.so动态链接库然后在执行install.sh文件进行安装
+###简要介绍一下如何使用该网络库
+首先进入UNet文件夹,使用makefile文件编译出.so动态链接库然后在执行install.sh文件进行安装，
 操作如图所示：
 ![输入图片说明](https://git.oschina.net/uploads/images/2017/0909/223139_69e2cda9_1296205.jpeg "makeAndinstall.jpg")
+其中的make命令是使用makefile将代码编译为Linux下的.so共享库（和Woindows下的dll类似），安装命令主要是将生成的.so移动值Linux下的/usr/lib文件夹下并将.h文件移动至/usr/include文件夹下，这两个文件夹书Linux内核存放库文件和头文件的地方。
 
-#使用示例请查看UClientTest文件夹和UserverTest文件夹下的main.cpp文件
+###使用示例请查看UClientTest文件夹和UserverTest文件夹下的main.cpp文件
 两个文件都是使用makefile进行编译的.
 
 
