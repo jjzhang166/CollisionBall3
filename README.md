@@ -101,7 +101,7 @@ return 0;
 首先进入UNet文件夹,使用makefile文件编译出.so动态链接库然后在执行install.sh文件进行安装，
 操作如图所示：
 ![输入图片说明](https://git.oschina.net/uploads/images/2017/0909/223139_69e2cda9_1296205.jpeg "makeAndinstall.jpg")
-其中的make命令是使用makefile将代码编译为Linux下的.so共享库（和Woindows下的dll类似），安装命令主要是将生成的.so移动至Linux下的/usr/lib文件夹下，并将.h文件移动至/usr/include文件夹下，这两个文件夹书Linux内核存放库文件和头文件的地方。最后一个CS命令可以忽略，这个是本人自己写的Linux下的一个截屏软件，主要是在Linux下没找一个好用的截屏软件，有兴趣可在我的项目中找到
+其中的make命令是使用makefile将代码编译为Linux下的.so共享库（和Woindows下的dll类似），安装命令主要是将生成的.so移动至Linux下的/usr/lib文件夹下，并将.h文件移动至/usr/include文件夹下，这两个文件夹书Linux内核存放库文件和头文件的地方。最后一个CS命令可以忽略，这个是本人自己写的Linux下的一个截屏软件，主要是在Linux下没找一个好用的截屏软件，有兴趣可在我的项目中找到http://git.oschina.net/lsylovews/jiepingruanjian
 
 ### 使用示例请查看UClientTest文件夹和UserverTest文件夹下的main.cpp文件
 两个文件都是使用makefile进行编译的.
