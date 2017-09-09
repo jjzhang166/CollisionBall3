@@ -1,0 +1,11 @@
+#新增Linux下的网络库UNet
+该网络库也和windows下的一样包含TCP和UDP协议下的客户端和服务端
+该网络模型TCP服务端包含select模型(相比于Windos下的select模型并发数要大,可达到几百),poll模型,epoll模型用户可根据自身需要选择自己所需的模型
+
+#简要介绍一下如何使用该网络库
+首先进入UNet文件夹,使用makefile文件编译出.so动态链接库
+然后在执行install.sh文件进行安装
+操作如图所示.
+
+#使用示例请查看UClientTest文件夹和UserverTest文件夹下的main.cpp文件
+两个文件都是使用makefile进行编译的.
